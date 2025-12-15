@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Afacad', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    }
+    
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 900;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1px 10%;
+    background: #fff;    
+    border-bottom: 2px solid #2c2c2c;
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: burlywood;
+}
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+#icon-cart-navbar{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/PracticeWeb/PicturesForWeb/bg3.jpg);
+    background-position: center;
+    background-size:auto;
+    background-attachment:scroll;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.main-home h1{
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-home h5{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-home p{
+    color: #2c2c2c;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+display: inline-block;
+color: #2c2c2c;
+font-size: 16px;
+font-weight: 500;
+text-transform: capitalize;
+border: 2px solid #2c2c2c;
+padding: 12px 25px;
+transition: all .42 ease;
+
+
+}
+.main-btn:hover{
+    background-color: #2c2c2c;
+    color: antiquewhite;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+.down i{
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    padding: 12px 12px;
+
+}
+/* Product section */
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+    
+}
+.Image{
+    width: 100%;
+    height: 100%;
+
+    transition: all .40s;
+}
+.row{
+    padding: 20px;
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;
+    height: 100%;
+
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color:#fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: burlywood;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.cart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.cart-icon:hover{
+    color:burlywood;
+}
+.price h4{
+color: #111;
+font-size: 16px;
+text-transform: capitalize;
+}
+.price p{
+    color: #2c2c2c;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* footer */
+footer {
+    position: relative;
+    bottom: 100;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 10%;
+    z-index: 1000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 10%;
+}
+
+.footer-info img {
+    width: 100px;
+}
+
+.footer a {
+    color: #ccc;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.footer a:hover {
+    color: burlywood;
+}
+
+.footer-links,
+.footer-contact {
+    color: #ccc;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    color: #ccc;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    color: white;
+} 
+
+/* Scrolling */
+header.stiky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+
+
+#scroll-to-top {
+    
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999; /* Визначте високий індекс z для забезпечення наверху */
+}
+
+
+
+
+
+/* Додайте цей код під ваш існуючий CSS код */
+
+/* Контейнер корзини */
+
+#cart-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 20px;
+    z-index: 1001;
+}
+
+/* Відображення корзини при кліці на іконку корзини */
+#cart-container.open {
+    transform: translateX(0);
+}
+
+/* Закриваючий (хрестик) кнопка корзини */
+#close-cart-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Оформлення окремих товарів у корзині */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item span {
+    font-weight: bold;
+}
+
+/* Затемнення фону за корзиною при відкритті */
+body.open-cart {
+    overflow: hidden;
+}
+#checkout-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2c2c2c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Delivery form style */
+body {
+    font-family: 'Afacad', sans-serif;
+}
+
+h2 {
+    color: #2c2c2c;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button#submit-order-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2c2c2c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Product page */
+.product-page {
+    padding: 20px;
+    
+    background-image: url(/PracticeWeb/PicturesForWeb/bg3.jpg);
+    background-position: center;
+    background-size:cover ;
+    align-items: center;
+}
+#productDetailsTable {
+    position: relative;
+    background: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+}
+
+#productDetailsTable th, #productDetailsTable td {
+    color: #000; 
+}
+
+#productPrice {
+    font-size: 2em; 
+}
+.product-images img {
+    border-radius: 15px;
+    max-width: 30%;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    max-width: 600px;
+}
+
+.product-specs {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+.product-specs #productImage{
+   height: 200px;
+   width: 200px;
+  
+}
+.product-specs td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.product-specs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.cart-icon {
+    background-color: #454745; 
+    color: white;
+    padding: 10px 10px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.cart-icon:hover {
+    background-color: #4e524e;
+}
+.add-to-cart-btn {
+    background-color: #454745; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    
+}
+
+.add-to-cart-btn:hover {
+    background-color: #4e524e;
+    transition: background-color 0.3s; 
+}
+
+
+/* Responsive*/
+@media(max-width:890px) {
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+@media(max-width:630px){
+.main-text h1{
+    font-size: 50px;
+    transition: .4s;
+}
+.main-text p{
+    font-size: 18px;
+    transition: .4s;
+}
+.main-btn{
+    padding: 10px 20px;
+    transition: .4s;
+}
+}
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s ;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+    body.navmenu.open{
+        overflow: hidden;
+    }
+}
+/* Основні стилі */
+body {
+    font-family: 'Afacad', sans-serif;
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form input, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+/* Стилі для кошика */
+#cart-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#cart-container.open {
+    transform: translateX(0);
+}
+
+#close-cart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#cart-items-container {
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item .remove-item {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+/* Стилі для кнопок */
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Стилі для меню акаунта */
+#account-menu {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#account-menu.show {
+    display: block;
+}
+
+#account-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+#account-menu a:hover {
+    background: #f5f5f5;
+}
+#login-container, #register-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 300px;
+}
+
+#close-login-btn, #close-register-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#login-container h2, #register-container h2 {
+    margin: 0 0 20px 0;
+}
+
+#login-container input, #register-container input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#login-container button, #register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-container button:hover, #register-container button:hover {
+    background-color: #45a049;
+}
+
+#login-container p, #register-container p {
+    text-align: center;
+}
+
+#login-container span, #register-container span {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container .input-group {
+    margin-bottom: 15px;
+}
+
+.login-container .input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container .input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #555;
+}
